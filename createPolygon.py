@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as np
+#import numpy as np
 
 def createPolygon():    
     polygon = []
@@ -35,13 +35,12 @@ def createPolygon():
     fig, ax = plt.subplots()
     ax.set_xlim((-20,20))
     ax.set_ylim((-20,20))
-    ax.set_title("Draw points of a simple polygon in counter-clockwise order!")
+    ax.set_title("Draw points of a polygon in counter-clockwise order!")
     ax.axis('equal')
     
     cid = fig.canvas.mpl_connect('button_press_event', onclick)
     # plt.grid()
 
     plt.show()
-    
     return polygon  
-#end procedure drawPolygon()
+#end procedure createPolygon()
